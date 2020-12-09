@@ -11,7 +11,7 @@ lazy val root = project
 
     libraryDependencies ++= 
       Seq(
-        "com.lihaoyi" %% "fastparse" % "2.2.2",
+        "org.typelevel" %% "cats-parse" % "0.1.0",
         "dev.zio" %% "zio" % zioVersion,
         "dev.zio" %% "zio-streams" % zioVersion,
         "dev.zio" %% "zio-test" % zioVersion % "test"
