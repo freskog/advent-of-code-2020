@@ -32,7 +32,7 @@ object Day1Solution extends BaseSolution:
         if path.isEmpty then Chunk.empty else value +: path
   
   def solve(terms:Int, input:Input):UIO[String] =
-    UIO(Tree.fromInts( terms - 1, input.asInts()).findSumPath(2020).product.toString)
+    UIO(Tree.fromInts( terms - 1, input.asIntPerLine()).findSumPath(2020).product.toString)
   
   override def solvePart1(input: Input): UIO[String] = solve(2, input)
   override def solvePart2(input: Input): UIO[String] = solve(3, input)
